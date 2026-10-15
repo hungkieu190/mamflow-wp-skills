@@ -66,9 +66,17 @@
 
 ---
 
+### Bước 6: Rà Soát, Kiểm Tra & Chuẩn Hóa Options (Options Audit & Refactoring)
+* **Chuyên gia:** `agency-wp-options-auditor`
+* **Mục tiêu:** Quét toàn bộ codebase, tự động đọc code bao quanh để hiểu tính năng thực tế, kiểm tra ngữ pháp tiếng Anh và sự khớp nhau với tính năng, phân loại lỗi và kết xuất ra 2 file báo cáo: `options-audit-report.md` và `options-audit-report.html`.
+* **Mẫu Prompt kích hoạt:**
+  > *"Dùng skill `agency-wp-options-auditor` quét toàn bộ codebase của plugin trong thư mục này. Hãy tìm tất cả options (`get_option`, `update_option`, Settings API, WooCommerce settings), đọc code để hiểu chức năng thực tế của từng option, đối chiếu xem tên đã chuẩn tiếng Anh và chuẩn tính năng chưa, chỉ rõ nơi hiển thị trên Admin UI (ví dụ: Settings > General) và xuất kết quả ra 2 file `options-audit-report.md` cùng `options-audit-report.html`."*
+
+---
+
 ## 🎛️ 3. Phím Tắt: Điều Phối Tự Động Toàn Bộ (Autonomous Mode)
 
-Nếu bạn muốn AI tự động vận hành trọn gói cả 5 bước trên mà không cần gọi từng người, hãy dùng **Nhạc trưởng**:
+Nếu bạn muốn AI tự động vận hành trọn gói cả chu trình mà không cần gọi từng người, hãy dùng **Nhạc trưởng**:
 * **Chuyên gia:** `agency-wp-agents-orchestrator`
 * **Mẫu Prompt kích hoạt:**
   > *"Dùng skill `agency-wp-agents-orchestrator` điều phối trọn gói việc xây dựng tính năng [Tên tính năng]. Hãy tự động gọi PM lập PRD -> CMS Dev viết code -> Security Auditor rà soát -> Reality Checker nghiệm thu. Hãy báo cáo tiến độ từng chặng cho tôi."*

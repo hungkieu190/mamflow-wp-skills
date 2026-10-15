@@ -57,7 +57,7 @@ if [ "$IS_GLOBAL" = false ]; then
     cp "$TMP_DIR/WP_WORKFLOW_GUIDE.md" ./WP_WORKFLOW_GUIDE.md 2>/dev/null || true
 fi
 
-echo -e "${COLOR_GREEN}✅ Successfully installed 8 WordPress Master Squad skills into:${COLOR_RESET}"
+echo -e "${COLOR_GREEN}✅ Successfully installed 9 WordPress Master Squad skills into:${COLOR_RESET}"
 echo -e "   ${TARGET_DIR}"
 echo ""
 echo -e "${COLOR_BLUE}Danh sách kỹ năng đã kích hoạt:${COLOR_RESET}"
@@ -69,5 +69,6 @@ echo -e "  - agency-wp-seo-specialist         (SEO Kỹ thuật, Schema JSON-LD)
 echo -e "  - agency-wp-reality-checker        (Nghiệm thu khắt khe, Error logs, Mobile)"
 echo -e "  - agency-wp-product-manager        (Lập PRD, CPT & Content Architecture)"
 echo -e "  - agency-wp-agents-orchestrator    (Điều phối quy trình toàn diện)"
+echo -e "  - agency-wp-options-auditor        (Audit Options, hiểu code & xuất .md+.html)"
 echo ""
 echo -e "${COLOR_GREEN}🎉 Chúc bạn phát triển dự án WordPress thành công!${COLOR_RESET}"
