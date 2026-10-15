@@ -66,11 +66,11 @@
 
 ---
 
-### Bước 6: Rà Soát, Kiểm Tra & Chuẩn Hóa Options (Options Audit & Refactoring)
+### Bước 6: Rà Soát & Chuẩn Hóa Label Cài Đặt (Admin Settings Label Audit)
 * **Chuyên gia:** `agency-wp-options-auditor`
-* **Mục tiêu:** Quét toàn bộ codebase, tự động đọc code bao quanh để hiểu tính năng thực tế, kiểm tra ngữ pháp tiếng Anh và sự khớp nhau với tính năng, phân loại lỗi và kết xuất ra 2 file báo cáo: `options-audit-report.md` và `options-audit-report.html`.
+* **Mục tiêu:** Quét toàn bộ codebase, tìm các nhãn hiển thị (Label/Title/Description/Tooltip trên UI Admin), đọc code bao quanh để hiểu tính năng thực tế. Kiểm tra ngữ pháp tiếng Anh và sự khớp nhau giữa Label với tính năng (bỏ qua hoàn toàn các giá trị value nội bộ như `value_1`). Kết xuất ra 2 file báo cáo: `options-audit-report.md` và `options-audit-report.html`.
 * **Mẫu Prompt kích hoạt:**
-  > *"Dùng skill `agency-wp-options-auditor` quét toàn bộ codebase của plugin trong thư mục này. Hãy tìm tất cả options (`get_option`, `update_option`, Settings API, WooCommerce settings), đọc code để hiểu chức năng thực tế của từng option, đối chiếu xem tên đã chuẩn tiếng Anh và chuẩn tính năng chưa, chỉ rõ nơi hiển thị trên Admin UI (ví dụ: Settings > General) và xuất kết quả ra 2 file `options-audit-report.md` cùng `options-audit-report.html`."*
+  > *"Dùng skill `agency-wp-options-auditor` quét toàn bộ giao diện cài đặt của plugin trong thư mục này. Hãy tìm tất cả Label/Title/Description hiển thị cho admin, đọc code để hiểu chức năng thực tế của từng setting, đối chiếu xem Label đã chuẩn tiếng Anh và chuẩn tính năng chưa (bỏ qua các giá trị value nội bộ như `value_1`), chỉ rõ nơi hiển thị trên Admin UI (ví dụ: Settings > General) và xuất kết quả ra 2 file `options-audit-report.md` cùng `options-audit-report.html`."*
 
 ---
 

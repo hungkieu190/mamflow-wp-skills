@@ -50,7 +50,7 @@ curl -fsSL https://raw.githubusercontent.com/hungkieu190/mamflow-wp-skills/main/
 | 🔍 | `agency-wp-seo-specialist` | **SEO Kỹ thuật** | Schema JSON-LD, Breadcrumbs, Canonical, tối ưu Index. |
 | 🧐 | `agency-wp-reality-checker` | **Thẩm định Nghiệm thu** | Mặc định "NEEDS WORK", check lỗi debug.log, test mobile. |
 | 🎛️ | `agency-wp-agents-orchestrator` | **Nhạc trưởng Điều phối** | Tự động chạy toàn bộ pipeline từ PRD đến khi nghiệm thu. |
-| 🔎 | `agency-wp-options-auditor` | **Audit Options & Nomenclature** | Quét code, hiểu tính năng, kiểm tra tiếng Anh & xuất báo cáo .md + .html. |
+| 🔎 | `agency-wp-options-auditor` | **Audit Settings Label** | Quét code, hiểu tính năng, kiểm tra tiếng Anh cho Label/Title UI (bỏ qua value nội bộ) & xuất báo cáo .md + .html. |
 
 ---
 
@@ -68,7 +68,7 @@ Sau khi cài đặt, bạn có thể gọi đích danh từng chuyên gia trong 
 * *"Dùng skill `agency-wp-cms-developer` viết giúp tôi một custom post type `tour` có phân loại `dia-diem` theo chuẩn WPCS."*
 * *"Dùng skill `agency-wp-security-auditor` audit bảo mật lại file `class-payment-handler.php`."*
 * *"Dùng skill `agency-wp-performance-engineer` tối ưu câu lệnh query này để giảm TTFB xuống dưới 500ms."*
-* *"Dùng skill `agency-wp-options-auditor` quét toàn bộ options của plugin này, đọc code hiểu tính năng, kiểm tra tiếng Anh và xuất cho tôi 2 file options-audit-report.md và options-audit-report.html."*
+* *"Dùng skill `agency-wp-options-auditor` quét toàn bộ label/title của các setting trong plugin này, đọc code hiểu tính năng, kiểm tra tiếng Anh (bỏ qua giá trị value nội bộ) và xuất cho tôi 2 file options-audit-report.md và options-audit-report.html."*
 * *"Dùng skill `agency-wp-reality-checker` kiểm tra xem trang checkout có lỗi Javascript hay vỡ layout trên mobile không."*
 
 ---
